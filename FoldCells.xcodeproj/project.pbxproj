@@ -13,6 +13,9 @@
 		E226F7E31D6FDB8000B053A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226F7E11D6FDB8000B053A4 /* Main.storyboard */; };
 		E226F7E51D6FDB8000B053A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E226F7E41D6FDB8000B053A4 /* Assets.xcassets */; };
 		E226F7E81D6FDB8000B053A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226F7E61D6FDB8000B053A4 /* LaunchScreen.storyboard */; };
+		E226F7F21D6FE3B400B053A4 /* TopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E226F7F01D6FE3B400B053A4 /* TopTableViewCell.m */; };
+		E226F7F31D6FE3B400B053A4 /* TopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E226F7F11D6FE3B400B053A4 /* TopTableViewCell.xib */; };
+		E26197851D701A0100E1D038 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E26197841D701A0100E1D038 /* DataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		E226F7E41D6FDB8000B053A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E226F7E71D6FDB8000B053A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E226F7E91D6FDB8000B053A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E226F7EF1D6FE3B400B053A4 /* TopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopTableViewCell.h; path = ../TopTableViewCell.h; sourceTree = "<group>"; };
+		E226F7F01D6FE3B400B053A4 /* TopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopTableViewCell.m; path = ../TopTableViewCell.m; sourceTree = "<group>"; };
+		E226F7F11D6FE3B400B053A4 /* TopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopTableViewCell.xib; path = ../TopTableViewCell.xib; sourceTree = "<group>"; };
+		E26197831D701A0100E1D038 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		E26197841D701A0100E1D038 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		E226F7D71D6FDB8000B053A4 /* FoldCells */ = {
 			isa = PBXGroup;
 			children = (
+				E226F7F91D6FE7F700B053A4 /* Cell */,
 				E226F7DB1D6FDB8000B053A4 /* AppDelegate.h */,
 				E226F7DC1D6FDB8000B053A4 /* AppDelegate.m */,
 				E226F7DE1D6FDB8000B053A4 /* ViewController.h */,
@@ -77,6 +86,18 @@
 				E226F7D91D6FDB8000B053A4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E226F7F91D6FE7F700B053A4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E226F7EF1D6FE3B400B053A4 /* TopTableViewCell.h */,
+				E226F7F01D6FE3B400B053A4 /* TopTableViewCell.m */,
+				E226F7F11D6FE3B400B053A4 /* TopTableViewCell.xib */,
+				E26197831D701A0100E1D038 /* DataModel.h */,
+				E26197841D701A0100E1D038 /* DataModel.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +160,7 @@
 				E226F7E81D6FDB8000B053A4 /* LaunchScreen.storyboard in Resources */,
 				E226F7E51D6FDB8000B053A4 /* Assets.xcassets in Resources */,
 				E226F7E31D6FDB8000B053A4 /* Main.storyboard in Resources */,
+				E226F7F31D6FE3B400B053A4 /* TopTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26197851D701A0100E1D038 /* DataModel.m in Sources */,
 				E226F7E01D6FDB8000B053A4 /* ViewController.m in Sources */,
 				E226F7DD1D6FDB8000B053A4 /* AppDelegate.m in Sources */,
 				E226F7DA1D6FDB8000B053A4 /* main.m in Sources */,
+				E226F7F21D6FE3B400B053A4 /* TopTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +326,7 @@
 				E226F7EE1D6FDB8000B053A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
